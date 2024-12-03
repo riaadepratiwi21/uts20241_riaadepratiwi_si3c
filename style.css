@@ -1,0 +1,332 @@
+. {
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.body {
+    display: flex;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1 fr 1fr 1fr 1fr;
+    grid-template-rows: 0,2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas: "header header header header"
+    "navigation main main main" "navigation statistik section1 section2" "navigation footer footer footer";
+    grid-gap: 1rem;
+    background-color: white;
+}
+
+.header {
+    grid-area: header;
+    background: whitesmoke;
+}
+
+.header h1{
+    color: rgb(14, 56, 134);
+    padding-top: 10px ;
+    padding-bottom: 10px ;
+    padding-left: 30px;
+    float: left;
+
+}
+
+.header button {
+    display: inline-block;
+    margin-left: 800px;
+    margin-top: 30px;
+    position: relative;
+    padding: 10px;
+}
+
+.main {
+    background: rgb(15, 56, 134);
+    grid-area: main;
+    padding-top: 30px;
+    align-items: flex-start; /* Sejajarkan elemen teks dan gambar di bagian atas */
+    display: flex;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
+.welcome {
+    margin-right: 150px;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.img.main {
+    display: flex;
+    flex-direction: column; /*Susun teks (h1 dan p) secara vertikal */
+
+}
+
+.main h1 {
+    padding-left: 60px;
+    color: white;
+    margin: 0;
+    line-height: 1;
+    padding-bottom: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main p {
+    padding-left: 60px;
+    color:white;
+    display: flex;
+    margin: 0;
+    line-height: 1;
+    padding-top: 10px;
+}
+
+.main h1, p {
+    text-align: justify;
+}
+
+.main img {
+    flex-wrap: wrap;
+    display: flex ;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    float: right;
+    margin-bottom: 50px;
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+}
+
+.navigation {
+    background: rgb(14, 56, 134);
+     grid-area: navigation;
+     border-radius: 15px;
+}
+
+.logo {
+    height: 80px;
+    padding: 16px;
+}
+
+.menu {
+    width: 100%;
+    height: 20x;
+    position: relative;
+    list-style: none;
+}
+
+.menu li:hover {
+    background-color:rgb(33, 33, 189); 
+}
+
+.menu li {
+    width: 260px;
+    height: 50px;
+    padding: 0.1rem ;
+    margin-top: 15px;
+}
+
+.menu li a {
+    margin-left: 50px;
+    color: white;
+    text-decoration: none;
+    padding-top: 10px;
+    margin-top: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.statistika {
+    background: whitesmoke;
+    grid-area: statistika;
+    margin: 5px;
+}
+
+.section1 {
+    background: white;
+    grid-area: section1;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 3px 5px;
+}
+
+.section1 div {
+    background: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 9px;
+    height: 15vh;
+    padding: 5px;
+    margin-bottom: 6px;
+
+}
+
+.hitam {
+    display:inline-block;
+    position: relative;
+    padding-top: 5px;
+    padding-left: 20px;
+
+}
+
+.htm {
+    display:inline-block;
+    position: relative;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+
+.hit {
+    display:inline-block;
+    position: relative;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+
+.tam {
+    display:inline-block;
+    position: relative;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+
+.biru {
+    color: rgb(19, 117, 173);
+    margin-top: 1px;
+    margin-left: 20px;
+}
+
+.blue {
+    color: rgb(19, 117, 173);
+    margin-top: 1px;
+    margin-left: 20px;
+}
+
+.sky {
+    color: rgb(19, 117, 173);
+    margin-top: 1px;
+    margin-left: 20px;
+}
+
+.light {
+    color: rgb(19, 117, 173);
+    margin-top: 1px;
+    margin-left: 20px;
+}
+.section2 {
+    background: white;
+    grid-area: section2;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.section2 div {
+    background: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 8px;
+    height: 15vh;
+    padding: 5px;
+    margin-bottom: 6px;
+    
+}
+
+.jadwal {
+    padding: 1px;
+    color: rgb(19, 117, 173);;
+}
+
+.black {
+    display: inline-block;
+    position: relative;
+    padding-top: 5px;
+    padding-left: 12px;
+}
+
+.b {
+    color: rgb(224, 13, 6);
+    margin-top: 3px;
+    margin-left: 15px;
+
+}
+
+.blek {
+    display: flex;
+    position: relative;
+    padding-top: 5px;
+    padding-left: 12px;
+}
+.i {
+    color: rgb(33, 61, 112);
+    margin-top: 3px;
+    margin-left: 15px;
+}
+
+.blac {
+    display: flex;
+    position: relative;
+    padding-top: 5px;
+    padding-left: 12px;
+}
+
+.r {
+    color: rgb(33, 61, 112);
+    margin-top: 3px;
+    margin-left: 15px;
+}
+
+.blak {
+    display: flex;
+    position: relative;
+    padding-top: 5px;
+    padding-left: 12px;
+}
+
+.u {
+    color: r
+    margin-top: 3px;
+    margin-left: 15px;
+}
+
+.footer {
+    background: rgb(238, 238, 238) ;
+    grid-area: footer;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.footer h3 {
+    display: flex;
+}
+
+.pertama {
+    display: inline-block;
+    padding: 15px 15px;
+    margin: 10;
+    border-radius: 5px;
+
+}
+
+.pertama a {
+    color: rgb(130, 69, 158);
+
+}
+
+.kedua {
+    
+    padding: 15px 15px;
+    margin: 10;
+    border-radius: 5px;
+}
+
+.ketiga {
+    display: inline-block;
+    padding: 15px 15px;
+    margin: 10;
+    border-radius: 5px;
+}
+
+
+
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns: 0.2fr;
+    }
+}
